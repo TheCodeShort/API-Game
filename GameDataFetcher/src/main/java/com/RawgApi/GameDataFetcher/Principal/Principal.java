@@ -1,22 +1,20 @@
 package com.RawgApi.GameDataFetcher.Principal;
 
-import com.RawgApi.GameDataFetcher.DatosGames;
+
+import com.RawgApi.GameDataFetcher.model.DatosGame;
+import com.RawgApi.GameDataFetcher.service.ConsumoAPI;
 import com.RawgApi.GameDataFetcher.service.ConvierteDatos;
 
 public class Principal {
-
-	private Consumo consumoAPI =new ConsumoAPI();
-	private ConvierteDatos convierteDatos = new ConvierteDatos();
-
-
-	public void mostrarDatos (){
-		System.out.println("esta es la api");
-		var json = consumoAPI.obtenerDatos("https://api.rawg.io/api/games?search=gear+of+war&key=5a257599d14b4fec8992cf14ee06f86d");
-		var datos = convierteDatos.obenerDatos(json, DatosGames.class);
+	ConsumoAPI consumoAPI = new ConsumoAPI();
+	ConvierteDatos convierteDatos = new ConvierteDatos();
+	public void mostrarInformacion(){
 
 
-
+		var json = consumoAPI.obtenerDatos("https://api.rawg.io/api/games?search=dota+2&key=5a257599d14b4fec8992cf14ee06f86d");
+		var datos = convierteDatos.obenerDatos(json, DatosGame.class );
 		System.out.println(datos);
-
 	}
+
 }
+
