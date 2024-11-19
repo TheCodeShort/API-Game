@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/API-Game.iml" filepath="$PROJECT_DIR$/.idea/API-Game.iml" />
-      <module fileurl="file://$PROJECT_DIR$/GameDataFetcher/GameDataFetcher.iml" filepath="$PROJECT_DIR$/GameDataFetcher/GameDataFetcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/GameDataFetcher.iml" filepath="$PROJECT_DIR$/.idea/GameDataFetcher.iml" />
     </modules>
   </component>
 </project>

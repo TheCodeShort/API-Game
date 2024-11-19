@@ -6,6 +6,6 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 
 
-public record DatosGame(@JsonAlias ("name") String titulo,
+public record DatosGame(@JsonAlias ("slug") String titulo,
                         @JsonAlias ("playtime") Integer horaDeJuego) {
 }
