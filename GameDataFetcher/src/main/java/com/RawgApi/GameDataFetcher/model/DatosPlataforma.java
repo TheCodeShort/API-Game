@@ -7,8 +7,5 @@ import java.util.List;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 
-
-public record DatosGame(@JsonAlias ("slug") String titulo,
-                        @JsonAlias ("playtime") Integer horaDeJuego,
-						@JsonAlias ("platforms") List <DatosPlataforma> plataformas) {
+public record DatosPlataforma(@JsonAlias ("platform") List<DatosPlataformaInformacion> informacion ) {
 }

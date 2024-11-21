@@ -28,10 +28,10 @@ public class Principal {
 		var datosListaJuegos = convierteDatos.obenerDatos(json, DatosListaJuegos.class );
 		listaJuegos.add(datosListaJuegos);
 
-		listaJuegos.stream()
-					.filter(j-> !j.listaJuegos().contains(juego))
-					.peek(System.out::println)
-					.collect(Collectors.toList());
+		System.out.println(listaJuegos);
+
+
+
 
 		}
 
